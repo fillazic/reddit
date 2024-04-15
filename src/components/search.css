@@ -1,0 +1,19 @@
+
+.search-items {
+    display: none;
+    position: absolute;
+}
+
+
+.result-container {
+    cursor: pointer;
+    padding-right: 2rem;
+}
+
+.result-container :hover {
+    background-color: #ddd;
+}
+
+.results {
+    padding-left: 1rem;
+}

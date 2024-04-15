@@ -1,0 +1,112 @@
+
+.side {
+    width: 17rem;
+    text-align: center;
+    margin: 4rem 6rem;
+    border-top: 0.15rem solid #c0baba;
+    border-bottom: 0.15rem solid #c0baba;
+}
+.side h5 {
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 2.4rem;
+    margin: 0.6rem 1rem;
+
+}
+
+.side ul {
+    width: 15rem;
+    
+    padding: 1rem;
+}
+
+.side li {
+    list-style-type: none;
+    width: 15rem;
+    margin: 0.4rem 0;
+
+}
+
+.side button {
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 0.1rem solid #c0baba;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+.side button:hover {
+    background-color: #e8ebf8;
+}
+
+.side select, option {
+    text-align: center;
+    margin-right: 0rem;
+    width: 14rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 0.1rem solid #c0baba;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.side select:hover, option:hover {
+    background-color: #e8ebf8;
+}
+
+@media only screen and (max-width:1500px){
+    .side {
+        width: 100%;
+        margin: auto;
+        border: none;
+    }
+    .side h5 {
+        font-size: 1.5rem;
+        width: 15rem;
+        height: 2.4rem;
+        margin: auto;
+    
+    }
+    
+    .side ul {
+        width: 100%;
+        padding: 0rem;
+        text-align: center;
+    }
+    
+    .side li {
+        list-style-type: none;
+        width: 15rem;
+        margin: 0.4rem auto;
+    
+    }
+    
+    .side button {
+        width: 14rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border: 0.1rem solid #c0baba;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        background-color: #f1f1f1;
+    }
+    .side button:hover {
+        background-color: #e8ebf8;
+    }
+    
+    .side select, option {
+        text-align: center;
+        margin-right: 0rem;
+        width: 14rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border: 0.1rem solid #c0baba;
+        border-radius: 0.6rem;
+        cursor: pointer;
+    }
+}

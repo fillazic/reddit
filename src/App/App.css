@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat&family=Poppins&display=swap');
+
+.main-body {
+    width: 100rem;
+    margin: auto;
+    font-family: Poppins;
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.posts {
+    width: 70%;
+    border-right: 4px solid #c0baba;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    width: 30%;
+
+}
+
+
+@media only screen and (max-width:1500px){
+    .blog {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5rem;
+        }
+    .main-body {
+            width: 70rem;
+            margin: auto;
+        }
+
+    .sidebar {
+        position: absolute;
+        display: none;
+     }
+     .posts{
+        width: 100%;
+        margin: auto;
+        border: none;
+     }
+     }
+
+     @media only screen and (max-width:1200px){
+        .main-body {
+            width: 50rem;
+            margin: auto;
+        }
+        .posts{
+            border: none;
+        }
+     }
+    
+     @media only screen and (max-width:800px){
+        .main-body {
+            max-width: 32em;
+            margin: auto ;
+        }
+        .blog {
+            display: block;
+            width: 100%;
+            margin-top: 6rem;
+        }
+        .posts{
+            width: 100%;
+            border: none;
+            margin: auto;
+         }
+     }
