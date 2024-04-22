@@ -3,10 +3,11 @@
     border-radius: 50%;
     border-top: 16px solid blue;
     border-bottom: 16px solid blue;
-    width: 120px;
-    height: 120px;
+    width: 10rem;
+    height: 10rem;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    text-align: center;
   }
   
   @-webkit-keyframes spin {

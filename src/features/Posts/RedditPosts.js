@@ -45,7 +45,7 @@ const RedditPosts = () => {
           <div className='other'>
           <section className='authors'>
             <h4>{post.subreddit_name_prefixed}</h4>
-            <h5>Posted by:  {post.author}</h5>
+            <h5 className='author'>Posted by:  {post.author}</h5>
           </section>
           <h2>{post.title}</h2>
 

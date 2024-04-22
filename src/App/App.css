@@ -73,13 +73,15 @@
     
      @media only screen and (max-width:800px){
         .main-body {
-            max-width: 32em;
+            width: 100%;
             margin: auto ;
         }
         .blog {
             display: block;
             width: 100%;
             margin-top: 6rem;
+            margin-left: auto;
+            margin-right: auto;
         }
         .posts{
             width: 100%;

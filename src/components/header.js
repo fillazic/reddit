@@ -27,7 +27,7 @@ const Header = () => {
                 src='images/redditBlueLogo1.png' alt='logo' 
                 className='logo'
                 onClick={()=>logoHandler('popular')}
-            /> Reddit<span>Clone</span>
+            /> <span>RedditClone</span>
         </h1>
     <div className='main-search'>
     <RedditSearchInput/>
