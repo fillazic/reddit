@@ -1,27 +1,23 @@
 
 import React from 'react';
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Router } from 'react-router-dom'
 import RedditPosts from '../features/Posts/RedditPosts';
-import Sidebar from '../components/sideBar';
-import Header from '../components/header';
-
+import FullPost from '../features/FullPost/FullPost';
+import Root from './Root';
 import './App.css';
 
-function App() {
+const router = createBrowserRouter(createRoutesFromElements(
+  <>
+  <Route path='/' element={ <Root/> } >
+    <Route path='/' element={ <RedditPosts/>} />
+    <Route path='/fullpost' element={ <FullPost/>} />
+  </Route>
+  </>
+))
 
-  return (
-    <div className='main-body'>
-      <div className='main-header'>
-      <Header/>
-      </div>
-      <div className='blog'>
-        <div className='posts'>
-          <RedditPosts/>
-        </div>
-        <div className='sidebar'>
-          <Sidebar />
-        </div>
-      </div>
-    </div>
+function App() {
+ return (
+    <RouterProvider router={ router } />
   );
 }
 

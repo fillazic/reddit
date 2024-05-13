@@ -1,12 +1,16 @@
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { setSubreddit, setDisplay } from '../App/redditSlice';
 import { selectPostsSearchStatus, searchPosts, selectSearchPosts, fetchSearchPosts } from '../App/redditSearch';
+import { setTerm} from '../App/redditSearch';
+import { useNavigate } from 'react-router-dom';
 import './search.css';
 
 const RedditSearch = () => {
 
   const dispatch = useDispatch();
+  const navigate=useNavigate()
   const term = useSelector(selectSearchPosts);
   const searchStatus= useSelector(selectPostsSearchStatus);
   const searchTerm = useSelector(searchPosts);
@@ -18,6 +22,15 @@ const RedditSearch = () => {
     {dispatch(fetchSearchPosts(searchTerm))}
 
   }, [dispatch, searchTerm]);
+    
+    const searchHandler = (search) => {
+      dispatch(setSubreddit(search));
+      dispatch(setTerm(''));
+      dispatch(setDisplay('dropdown-content-none'))
+
+      navigate('');
+    };
+    
 
     if (searchStatus === 'loading') {
       return <div className={`${searchItems}`}>Loading...</div>;
@@ -32,7 +45,9 @@ const RedditSearch = () => {
 
     <div className='result-container'>
             {term.map((terms) => (
-                <div key={terms.id} className='results'>
+              <div 
+                  key={terms.id} className='results' 
+                  onClick={()=>searchHandler(`/${terms.subreddit_name_prefixed}`)}>
                 <h4>{terms.subreddit_name_prefixed}</h4>
                 <h5>Posted by:{terms.subreddit_subscribers}</h5>
               </div>

@@ -17,7 +17,7 @@ const RedditSearchInput = () => {
     dispatch(setTerm(e.target.value));
     }
   
-    const clearHandler=()=>{
+const clearHandler=()=>{
       dispatch(setTerm(''));
     }
 

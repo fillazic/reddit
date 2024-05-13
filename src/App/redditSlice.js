@@ -7,11 +7,14 @@ const redditSlice = createSlice({
     articles: [],
     status: 'nn',
     error: null,
-    subreddit: 'popular'
+    display: 'dropdown-content-none',
+    subreddit: '/r/popular'
   },
   reducers: {
     setSubreddit: (state,action) => {
       state.subreddit = action.payload},
+    setDisplay: (state,action) => {
+        state.display = action.payload},
 },
   extraReducers: (builder) => {
     builder
@@ -29,8 +32,9 @@ const redditSlice = createSlice({
   },
 });
 
-export const {setSubreddit} = redditSlice.actions;
+export const {setSubreddit, setDisplay} = redditSlice.actions;
 export const term = (state) => state.reddit.subreddit;
+export const drop = (state) => state.reddit.display;
 export const selectSearchTerm = (state) => state.reddit;
 export const selectPosts = (state) => state.reddit.articles;
 export const selectPostsStatus = (state) => state.reddit.status;
@@ -39,11 +43,11 @@ export default redditSlice.reducer;
 
 export const fetchPosts = createAsyncThunk('reddit/fetchPosts', async (term) => {
   try {
-    const response = await fetch(`https://www.reddit.com/r/${term}.json`);
+    const response = await fetch(`https://www.reddit.com${term}.json`);
     const data = await response.json();
     console.log(data); 
 
-    return data.data.children.map((child) => child.data);
+    return data.data.children.map((child) => child.data)
   } catch (error) {
     console.error('Error fetching Reddit posts:', error);
     throw error;

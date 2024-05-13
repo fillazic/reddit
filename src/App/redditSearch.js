@@ -10,7 +10,7 @@ const redditSearchSlice = createSlice({
     term:''
   },
   reducers: {
-    setTerm: (state,action) => {
+    setTerm: (state, action) => {
         state.term = action.payload},
 },
   extraReducers: (builder) => {
@@ -38,7 +38,7 @@ export default redditSearchSlice.reducer;
 
 export const fetchSearchPosts = createAsyncThunk('search/fetchSearchPosts', async (searchPosts) => {
   try {
-    const response = await fetch(`https://www.reddit.com/r/${searchPosts}.json`);
+    const response = await fetch(`https://www.reddit.com/search.json?q=r/${searchPosts}`);
     const data = await response.json();
     console.log(data); 
 

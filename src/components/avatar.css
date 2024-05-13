@@ -1,0 +1,11 @@
+.avatar-profile-image {
+    border-radius: 50%;
+    height: 2.5rem;
+    margin: auto 0.8rem;
+
+  }
+
+  .loading {
+    border-radius: 50%;
+    height: 2.5rem;
+  }
