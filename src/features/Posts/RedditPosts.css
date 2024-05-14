@@ -13,8 +13,12 @@
     margin: 4rem auto;
     padding: 0rem 0.5rem;
     box-sizing: border-box;
+    text-decoration: none;
   }
 
+.container{
+    text-decoration: none;
+  }
 
 .other {
   padding: 0.2rem;
@@ -192,9 +196,6 @@
   font-size: 2rem;
 }
 
-.comment {
-  text-decoration: none;
-}
 
 #top {
   display: absolute; 
@@ -215,8 +216,7 @@
 #top:hover {
   color: #141c3a;
   background-color: #bfbdd4;
-  border: 0.1rem solid #c0baba;
-  font-size: 1.5rem;
+  
 }
 
 #top-none {
@@ -298,8 +298,10 @@
         transform: translateY(-50%);
       }
       #top {
-        bottom: 38rem;
-        right: 2rem;   
+        bottom: 36.5rem;
+        right: 0.5rem;
+        font-size: 1.2rem; 
+        padding: 0.5rem;  
       }
 
   }
@@ -373,9 +375,6 @@
       .fail {
         font-size: 1.2rem;
       }
-      #top{
-       display: none;
-      }
 
 
  }
@@ -443,9 +442,6 @@
 
     .fail {
       font-size: 1.2rem;
-    }
-    #top{
-      bottom: 40rem;
     }
 
  }

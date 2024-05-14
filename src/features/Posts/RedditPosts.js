@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Outlet } from 'react-router-dom';
 import { fetchPosts, selectPosts, selectPostsStatus, term} from '../../App/redditSlice';
@@ -78,7 +78,8 @@ const RedditPosts = () => {
   return (
     <div className='main'>
       {posts.map((post) => (
-        <div key={post.id} className='post-container'>
+        <Link to='/fullpost' className='container'>
+        <div key={post.id} className='post-container' onClick={()=>handleFullPost(post.permalink, post)}>
           <div className='other'>
           <section className='authors'>
             <h4><Avatar name={post.subreddit} />{post.subreddit_name_prefixed}</h4>
@@ -108,17 +109,16 @@ const RedditPosts = () => {
           ) : null}
 
           <div className='footer'>
-          <div className='likes'><img src='images/blue-like-button-icon.png' alt='' className='side-x-img'/> {post.ups}</div>
-          <Link to='/fullpost' className='comment'>
-            <div  className='comments' 
-                onClick={()=>handleFullPost(post.permalink, post)}
-                >
+          <div className='likes'>
+            <img src='images/blue-like-button-icon.png' alt='' className='side-x-img'/> {post.ups}
+          </div>
+          <div  className='comments' >
             <img src='images/comments.png' alt='' className='side-x-img'/> {post.num_comments}
           </div>
-          </Link>
           </div>
           </div>
         </div>
+        </Link>
       ))}
       <Outlet/>
       <button id={display} title="Go to top" onClick={scrollToTop} >

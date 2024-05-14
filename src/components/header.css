@@ -138,6 +138,9 @@ h1 {
     }
 }
 @media only screen and (max-width:1100px){
+    .header {
+        height: 4.5rem
+    }
     .dropdown-content {
         width: 50%;
     }
@@ -186,7 +189,46 @@ h1 {
     .dropdown-content {
         width: 100%;
     }
+    .dropbtn {
+        border: none;
+        width: auto;
+        height: 2.7rem;
+        cursor: pointer;
+        background-color: white;
+    }
 
+
+    .dropbtn img {
+        height: 2.6rem;
+        opacity: 0.8;
+    }
+
+    /*.dropdown {
+    display: block;
+    width: 15rem;
+}
+
+.button-menu {
+    margin-left: 12rem;
+}
+
+.dropbtn {
+    border: 2px solid #c0baba;
+    border-radius: 20%;
+    width: auto;
+    height: 3.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.dropbtn img {
+    width: auto;
+    height: 2.4rem;
+    opacity: 0.8;
+}
+*/
 }
 
 

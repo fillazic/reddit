@@ -190,8 +190,7 @@
 #topFull:hover {
   color: #141c3a;
   background-color: #bfbdd4;
-  border: 0.1rem solid #c0baba;
-  font-size: 1.5rem;
+
 }
 
 #topFull-none {
@@ -215,7 +214,7 @@
       text-align: center;
       width: auto;
       height: auto;
-      margin: 4rem 2rem;
+      margin: 4rem 4rem;
     }
 
     
@@ -227,7 +226,7 @@
     }
     
     .fullpost-container img {
-        max-width: 35rem;
+        max-width: 30rem;
         max-height: 28rem;
         border-radius: 1rem;
         
@@ -269,14 +268,18 @@
       }
 
       #topFull {
-        bottom: 38rem;
-        right: 0.5rem;   
+        bottom: 36.5rem;
+        right: 0.5rem;
+        font-size: 1.2rem; 
+        padding: 0.5rem;  
       }
 
       #back {
-        bottom: 38rem;
+        bottom: 36.5rem;
         right: auto;
         left: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.5rem; 
       }
 
   }
@@ -349,9 +352,7 @@
       .fail {
         font-size: 1.2rem;
       }
-      #top {
-        display: none;
-      }
+     
 
  }
 
@@ -492,6 +493,13 @@
 
     .fail {
       font-size: 1.2rem;
+
+    }
+    #topFull {
+      bottom: 40.5rem;
+    }
+    #back {
+      bottom: 40.5rem;
     }
 
  }
