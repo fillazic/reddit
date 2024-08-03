@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# RedditClone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 1. Introduction
 
-In the project directory, you can run:
+RedditClone is a web application that fetches and displays data from the real Reddit app. It also has a search feature to find specific posts.
 
-### `npm start`
+### 2. Features
+- Fetch and display posts from Reddit
+- Search for specific posts
+- View post details including comments
+- Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Technologies Used
+- HTML
+- CSS
+- JavaScript
+- React
+- Redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Installation
 
-### `npm test`
+Prerequisites
+  -  Node.js
+  - npm (Node Package Manager)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Steps
+1. **Choose or create a folder:** Select the folder where you want to clone the repository, or create a new one.
 
-### `npm run build`
+2. **Open Git Bash:** You can use Git Bash to run the following commands.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Navigate to your chosen folder:** Change the directory to your chosen folder. You can do this by right-clicking in the folder and selecting "Git Bash Here" or by navigating through the terminal.
+        ``cd path/to/your/directory``
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Clone the repository:**
+        ``git clone https://github.com/fillazic/reddit.git``
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Navigate to the cloned repository:**
+        ``cd redditclone``
 
-### `npm run eject`
+6. **Open the folder in your code editor:** Open your code editor (such as VS Code) and open the folder where you cloned the repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. **Install the necessary dependencies:**
+        ``npm install``
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+8. **Start the development server:**
+        ``npm start``
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 5. Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After completing the installation steps, you can open your browser and go to http://localhost:3000 to view the app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Also you can access the live application via <https://redditcopy.netlify.app/>
 
-### Code Splitting
+ - The home page will display the latest posts from Reddit.
+ - Use the search bar at the top to find specific posts.
+ - Click on a post to view its details and comments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Note
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Free use of Reddit APIs is limited to 10 queries per minute. If the rate limit is being hit while searching through the app, subsequent queries may fail until the timer resets.
