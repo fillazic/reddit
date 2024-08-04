@@ -55,8 +55,8 @@ After completing the installation steps, you can open your browser and go to htt
 **Also you can access the live application via <https://redditcopy.netlify.app/>**
 
  - The home page will display the latest posts from Reddit.
- - Use the search bar at the top to find specific posts.
  - Click on a post to view its details and comments.
+ - Use the search bar at the top to find specific posts.
 
 ### Note
 
